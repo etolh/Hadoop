@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="JUnit4">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:11.0.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-math3:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: xmlenc:xmlenc:0.52" level="project" />
+    <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-net:commons-net:3.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-sslengine:6.1.26" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.3" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-digester:commons-digester:1.8" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.7.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils-core:1.8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.10" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.10" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.avro:avro:1.7.4" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.0.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.5.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-auth:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.server:apacheds-kerberos-codec:2.0.0-M15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.server:apacheds-i18n:2.0.0-M15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.api:api-asn1-api:1.0.0-M20" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.api:api-util:1.0.0-M20" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-recipes:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.htrace:htrace-core:3.1.0-incubating" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.tukaani:xz:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-hdfs:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:6.1.26" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.6.2.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.0.23.Final" level="project" />
+    <orderEntry type="library" name="Maven: xerces:xercesImpl:2.9.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.04" level="project" />
+    <orderEntry type="library" name="Maven: org.fusesource.leveldbjni:leveldbjni-all:1.8" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-app:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-common:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-client:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-common:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.13" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.9.13" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-annotations:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.anarres.lzo:lzo-hadoop:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.anarres.lzo:lzo-core:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-core:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.8" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-json:1.8" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jettison:jettison:1.1" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.8" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-math:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.26" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" name="Maven: tomcat:jasper-runtime:5.5.12" level="project" />
+    <orderEntry type="library" name="Maven: tomcat:jasper-compiler:5.5.12" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-api-2.1:6.1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api-2.5:6.1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-2.1:6.1.14" level="project" />
+    <orderEntry type="library" name="Maven: ant:ant:1.6.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-el:commons-el:1.0" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.jets3t:jets3t:0.6.1" level="project" />
+    <orderEntry type="library" name="Maven: hsqldb:hsqldb:1.8.0.10" level="project" />
+    <orderEntry type="library" name="Maven: oro:oro:2.0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jdt:core:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:2.0.2" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/el-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jasper.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xz-1.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/asm-3.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsp-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/bootstrap.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/ecj-4.3.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/guice-3.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jasper-el.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/avro-1.7.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/gson-2.2.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/junit-4.11.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/antlr-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina-ha.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsch-0.1.54.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsp-api-2.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/servlet-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-dbcp.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-juli.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xmlenc-0.52.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina-ant.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/guava-11.0.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hsqldb-2.0.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jets3t-0.9.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jettison-1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jetty-6.1.26.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jline-0.9.94.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsr305-3.0.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/log4j-1.2.17.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/paranamer-2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-coyote.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/activation-1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-daemon.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-io-2.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/httpcore-4.2.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/javax.inject-1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jaxb-api-2.2.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/joda-time-2.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/stax-api-1.0-2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-i18n-es.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-i18n-fr.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-i18n-ja.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/annotations-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/aopalliance-1.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina-tribes.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-cli-1.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-net-3.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-core-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-json-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/json-simple-1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/servlet-api-2.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xml-apis-1.3.04.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/zookeeper-3.4.6.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-lang-2.6.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-ant-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-aws-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-kms-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-nfs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-sls-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/httpclient-4.2.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-guice-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/slf4j-api-1.7.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xercesImpl-2.9.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-codec-1.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/guice-servlet-3.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-auth-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-hdfs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hamcrest-core-1.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-xc-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jaxb-impl-2.2.3-1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-client-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-server-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jetty-util-6.1.26.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/mockito-all-1.8.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/netty-3.6.2.Final.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-i18n-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-util-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/aws-java-sdk-1.7.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/ehcache-core-2.4.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-azure-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-rumen-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-core-2.2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/leveldbjni-all-1.8.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/metrics-core-3.0.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/mina-core-2.0.0-M5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/azure-storage-2.0.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-lang3-3.3.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-math3-3.1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-distcp-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-extras-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/java-xmlbuilder-0.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jul-to-slf4j-1.7.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/protobuf-java-2.5.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/snappy-java-1.0.4.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-digester-1.8.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/curator-client-2.7.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-gridmix-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-jaxrs-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/slf4j-log4j12-1.7.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-daemon-1.0.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-logging-1.1.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/curator-recipes-2.7.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-archives-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-datajoin-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-hdfs-nfs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-api-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-asn1-api-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-asn1-ber-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-compress-1.4.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-httpclient-3.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-openstack-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-streaming-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-databind-2.2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jetty-sslengine-6.1.26.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/netty-all-4.0.23.Final.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/apacheds-i18n-2.0.0-M15.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-beanutils-1.7.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/curator-framework-2.7.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-core-asl-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-ldap-model-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-annotations-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-client-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-collections-3.2.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-configuration-1.6.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-annotations-2.2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-mapper-asl-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-registry-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-beanutils-core-1.8.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/htrace-core-3.1.0-incubating.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-examples-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-hs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/apacheds-kerberos-codec-2.0.0-M15.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-app-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-core-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-web-proxy-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-nodemanager-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-shuffle-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-jobclient-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-hs-plugins-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-resourcemanager-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-sharedcachemanager-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-applications-distributedshell-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-applicationhistoryservice-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-applications-unmanaged-am-launcher-2.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/el-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jasper.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xz-1.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/asm-3.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsp-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/bootstrap.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/ecj-4.3.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/guice-3.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jasper-el.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/avro-1.7.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/gson-2.2.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/junit-4.11.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/antlr-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina-ha.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsch-0.1.54.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsp-api-2.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/servlet-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-dbcp.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-juli.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xmlenc-0.52.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina-ant.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/guava-11.0.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hsqldb-2.0.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jets3t-0.9.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jettison-1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jetty-6.1.26.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jline-0.9.94.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jsr305-3.0.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/log4j-1.2.17.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/paranamer-2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-coyote.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/activation-1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-daemon.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-io-2.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/httpcore-4.2.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/javax.inject-1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jaxb-api-2.2.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/joda-time-2.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/stax-api-1.0-2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-i18n-es.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-i18n-fr.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/tomcat-i18n-ja.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/annotations-api.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/aopalliance-1.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/catalina-tribes.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-cli-1.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-net-3.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-core-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-json-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/json-simple-1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/servlet-api-2.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xml-apis-1.3.04.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/zookeeper-3.4.6.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-lang-2.6.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-ant-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-aws-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-kms-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-nfs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-sls-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/httpclient-4.2.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-guice-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/slf4j-api-1.7.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/xercesImpl-2.9.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-codec-1.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/guice-servlet-3.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-auth-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-hdfs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hamcrest-core-1.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-xc-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jaxb-impl-2.2.3-1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-client-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jersey-server-1.9.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jetty-util-6.1.26.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/mockito-all-1.8.5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/netty-3.6.2.Final.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-i18n-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-util-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/aws-java-sdk-1.7.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/ehcache-core-2.4.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-azure-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-rumen-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-core-2.2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/leveldbjni-all-1.8.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/metrics-core-3.0.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/mina-core-2.0.0-M5.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/azure-storage-2.0.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-lang3-3.3.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-math3-3.1.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-distcp-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-extras-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/java-xmlbuilder-0.4.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jul-to-slf4j-1.7.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/protobuf-java-2.5.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/snappy-java-1.0.4.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-digester-1.8.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/curator-client-2.7.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-gridmix-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-jaxrs-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/slf4j-log4j12-1.7.10.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-daemon-1.0.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-logging-1.1.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/curator-recipes-2.7.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-archives-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-datajoin-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-hdfs-nfs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-api-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-asn1-api-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-asn1-ber-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-compress-1.4.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-httpclient-3.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-openstack-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-streaming-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-databind-2.2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jetty-sslengine-6.1.26.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/netty-all-4.0.23.Final.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/apacheds-i18n-2.0.0-M15.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-beanutils-1.7.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/curator-framework-2.7.1.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-core-asl-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/api-ldap-model-1.0.0-M20.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-annotations-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-client-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-collections-3.2.2.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-configuration-1.6.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-annotations-2.2.3.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/jackson-mapper-asl-1.9.13.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-registry-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/commons-beanutils-core-1.8.0.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/htrace-core-3.1.0-incubating.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-examples-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-hs-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/apacheds-kerberos-codec-2.0.0-M15.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-app-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-core-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-web-proxy-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-common-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-nodemanager-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-shuffle-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-jobclient-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-mapreduce-client-hs-plugins-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-resourcemanager-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-sharedcachemanager-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-applications-distributedshell-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-server-applicationhistoryservice-2.7.7.jar!/" />
+          <root url="jar://F:/iso/linux-tars/hadoop-2.7.7/_libs/hadoop-yarn-applications-unmanaged-am-launcher-2.7.7.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
