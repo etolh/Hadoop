@@ -8,6 +8,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 
 import java.io.IOException;
 
@@ -36,6 +37,8 @@ public class WCApp {
         job.setJobName("Word Count");    //作业名称
         job.setInputFormatClass(TextInputFormat.class); //设置输入格式
 
+        job.setOutputFormatClass(SequenceFileOutputFormat.class);   //设置输出格式：序列文件
+
         //添加输入路径、输出路径
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
@@ -44,8 +47,9 @@ public class WCApp {
 //        FileInputFormat.setMinInputSplitSize(job, 1L);  // 设置最小切片大小
 
         job.setMapperClass(WCMapper.class);
-        job.setReducerClass(WCReducer.class);
+//        job.setReducerClass(WCReducer.class);
 
+        job.setNumReduceTasks(0);       //设置reduce任务个数
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         job.waitForCompletion(true);
