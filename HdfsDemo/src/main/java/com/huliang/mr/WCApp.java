@@ -22,22 +22,22 @@ public class WCApp {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
         // 本地运行MR 必备
-        System.setProperty("hadoop.home.dir", "F:\\iso\\linux-tars\\hadoop-2.7.7");
+//        System.setProperty("hadoop.home.dir", "F:\\iso\\linux-tars\\hadoop-2.7.7");
 
         if(args.length != 2) {
-            System.err.println("Usage: WCApp <input path> <output path>");
+            System.err.println("Usage: MaxTempApp <input path> <output path>");
             System.exit(-1);
         }
 
         Configuration conf = new Configuration();
-        conf.set("fs.defaultFs", "file:///"); //本地MR必备
+//        conf.set("fs.defaultFs", "file:///"); //本地MR必备
 
         Job job = Job.getInstance(conf);
         job.setJarByClass(WCApp.class); //搜索类
         job.setJobName("Word Count");    //作业名称
         job.setInputFormatClass(TextInputFormat.class); //设置输入格式
 
-        job.setOutputFormatClass(SequenceFileOutputFormat.class);   //设置输出格式：序列文件
+//        job.setOutputFormatClass(SequenceFileOutputFormat.class);   //设置输出格式：序列文件
 
         //添加输入路径、输出路径
         FileInputFormat.addInputPath(job, new Path(args[0]));
@@ -46,10 +46,14 @@ public class WCApp {
 //        FileInputFormat.setMaxInputSplitSize(job, 13L); // 设置最大切片大小
 //        FileInputFormat.setMinInputSplitSize(job, 1L);  // 设置最小切片大小
 
-        job.setMapperClass(WCMapper.class);
-//        job.setReducerClass(WCReducer.class);
+        job.setPartitionerClass(MyPartitioner.class);       //设置分区类
+        job.setCombinerClass(WCReducer.class);              //设置combiner类
 
-        job.setNumReduceTasks(0);       //设置reduce任务个数
+        job.setMapperClass(WCMapper.class);
+        job.setReducerClass(WCReducer.class);
+
+        job.setNumReduceTasks(3);       //设置reduce任务个数
+
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         job.waitForCompletion(true);

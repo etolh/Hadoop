@@ -19,9 +19,16 @@ public class WCMapper extends Mapper<LongWritable, Text, Text,IntWritable> {
     protected void map(LongWritable key, Text value, org.apache.hadoop.mapreduce.Mapper.Context context) {
 
         String lines = value.toString();    // 输入行
+
+        // 打印当前进程
+//        String tno = Thread.currentThread().getName();
+//        System.out.println(tno + "\tWCMapper\t" +"value:"+ value.toString());
+
         for(String word : lines.split("\\s+")) {
             try {
                 context.write(new Text(word), new IntWritable(1));
+                // 设置group和counter
+                context.getCounter("m", MRInfoUtil.info(this, "map")).increment(1L);
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {

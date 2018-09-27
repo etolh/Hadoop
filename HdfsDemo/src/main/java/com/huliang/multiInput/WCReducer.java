@@ -1,4 +1,4 @@
-package com.huliang.mr;
+package com.huliang.multiInput;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -21,10 +21,9 @@ public class WCReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
         for(IntWritable count : values) {
             sum += count.get(); // 汇总
         }
-//         打印当前进程
-//        String tno = Thread.currentThread().getName();
-//        System.out.println(tno + "\t : MaxTempReducer :" + key.toString() + "=" + sum);
+        // 打印当前进程
+        String tno = Thread.currentThread().getName();
+        System.out.println(tno + "\t : MaxTempReducer :" + key.toString() + "=" + sum);
         context.write(key, new IntWritable(sum));
-        context.getCounter("r", MRInfoUtil.info(this, "reduce")).increment(1L);
     }
 }

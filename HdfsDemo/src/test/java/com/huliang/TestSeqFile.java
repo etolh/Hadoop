@@ -10,6 +10,7 @@ import org.apache.hadoop.io.compress.GzipCodec;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.Random;
 
 
 /**
@@ -17,6 +18,29 @@ import java.io.IOException;
  * @date 2018/9/10 20:51
  */
 public class TestSeqFile {
+
+    /**
+     * 创建温度序列文件
+     */
+    @Test
+    public void writeTempSeqFile() throws IOException {
+
+        Configuration conf = new Configuration();
+        conf.set("fs.defaultFS","file:///");    //本地文件系统
+        FileSystem fs = FileSystem.get(conf);
+        Path path = new Path("F:\\bigdata\\test\\maxtemp\\temp.seq");
+
+        SequenceFile.Writer writer = SequenceFile.createWriter(fs, conf, path, IntWritable.class, IntWritable.class);
+
+        Random random = new Random();
+        for(int i = 0; i < 10000; i++) {
+            int year = 1950 + random.nextInt(100);
+            int temp = -50 + random.nextInt(100);
+            writer.append(new IntWritable(year), new IntWritable(temp));
+        }
+        writer.close();
+    }
+
 
     /**
      * 写操作
