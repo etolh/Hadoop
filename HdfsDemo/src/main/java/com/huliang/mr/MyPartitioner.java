@@ -13,7 +13,7 @@ public class MyPartitioner extends Partitioner<Text, IntWritable> {
 
     public int getPartition(Text text, IntWritable intWritable, int i) {
 
-        System.out.println("MyPartitioner\t"+"key: "+text.toString()+"\tvalue:"+intWritable.get());
+        System.out.println("MySkewPartitioner\t"+"key: "+text.toString()+"\tvalue:"+intWritable.get());
         return 0;
     }
 }

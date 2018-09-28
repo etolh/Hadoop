@@ -31,7 +31,7 @@ public class MaxTempApp {
         Configuration conf = new Configuration();
         conf.set("fs.defaultFs", "file:///"); //本地MR必备
 
-        Job job = Job.getInstance(conf);
+        Job job = Job.getInstance(conf);       // 将conf进行拷贝JobConf jobConf = new JobConf(conf)，再创建job
         job.setJarByClass(MaxTempApp.class); //搜索类
         job.setJobName("Max Temperature");    //作业名称
 //        job.setInputFormatClass(TextInputFormat.class); //设置输入格式
@@ -58,8 +58,11 @@ public class MaxTempApp {
         // numSapmple:抽取样本的总数
         // maxSplitSampled:最大采样切片数,即分区数，和reduce任务数一致
         InputSampler.Sampler<IntWritable, IntWritable> sampler =
-                new InputSampler.RandomSampler<IntWritable, IntWritable>(0.1, 10000, 3);
-//        TotalOrderPartitioner.setPartitionFile(conf, new Path("F:\\bigdata\\test\\maxtemp\\par.lst"));
+                new InputSampler.RandomSampler<IntWritable, IntWritable>(0.5, 5000, 3);
+
+        // 将sample写入分区文件
+        // 获取job的创建conf，而非最初的conf
+        TotalOrderPartitioner.setPartitionFile(job.getConfiguration(), new Path("F:\\bigdata\\test\\maxtemp\\par.lst"));
 
         InputSampler.writePartitionFile(job, sampler);
 

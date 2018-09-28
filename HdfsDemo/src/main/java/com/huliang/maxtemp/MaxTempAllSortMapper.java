@@ -25,6 +25,4 @@ public class MaxTempAllSortMapper extends Mapper<IntWritable, IntWritable, IntWr
             e.printStackTrace();
         }
     }
-
-
 }
