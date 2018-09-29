@@ -1,4 +1,4 @@
-package com.huliang.multiInput;
+package com.huliang.wcmultiInput;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;

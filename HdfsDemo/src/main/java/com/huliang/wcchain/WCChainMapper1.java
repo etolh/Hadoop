@@ -1,6 +1,6 @@
-package com.huliang.multiInput;
+package com.huliang.wcchain;
 
-
+import com.huliang.mr.MRInfoUtil;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -9,21 +9,19 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 /**
+ * 统计单词数的Map : 分割
+ * 输入：<1, "aa aaa aa ... aa"> 输出: <"aa", 1> <"aaa", 1>
  * @author huliang
- * @date 2018/9/27 18:13
+ * @date 2018/9/29
  */
-public class WCTextMapper extends Mapper<LongWritable, Text, Text,IntWritable> {
+public class WCChainMapper1 extends Mapper<LongWritable, Text, Text,IntWritable> {
 
     @Override
     protected void map(LongWritable key, Text value, Context context) {
 
-        String line = value.toString();    // 行文本，切词
+        String lines = value.toString();    // 输入行
 
-        // 打印当前进程
-        String tno = Thread.currentThread().getName();
-        System.out.println(tno + "\tWCTextMapper\t" +"value:"+ value.toString());
-
-        for(String word : line.split("\\s+")) {
+        for(String word : lines.split("\\s+")) {
             try {
                 context.write(new Text(word), new IntWritable(1));
             } catch (IOException e) {
@@ -32,8 +30,5 @@ public class WCTextMapper extends Mapper<LongWritable, Text, Text,IntWritable> {
                 e.printStackTrace();
             }
         }
-
     }
-
-
 }
