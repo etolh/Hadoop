@@ -1,0 +1,12 @@
+{
+	"type" : "record",
+	"namespace" : "com.huliang.avro",
+	"name" : "Employee",
+	"fields" : [
+		{ "name" : "id" , "type" : "int" },
+		{ "name" : "name" , "type" : "string" },
+		{"name": "salary", "type": "int"},
+	 	{"name": "age", "type": "int"},
+		{"name": "address", "type": "string"}
+	]
+}
