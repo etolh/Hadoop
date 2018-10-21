@@ -1,6 +1,5 @@
-package com.huliang.stormdemo.wordcount;
+package com.huliang.stormdemo.hbase;
 
-import com.huliang.stormdemo.util.InfoUtil;
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
 import org.apache.storm.topology.IRichBolt;
@@ -13,7 +12,7 @@ import java.util.Map;
 
 /**
  * 接收WordSpout输出的line元组，进行split
- * 调用InfoUtil发送执行信息到nc服务器:8888端口
+ *
  * @author huliang
  * @date 2018/10/19 13:32
  */
@@ -30,12 +29,10 @@ public class WordSplitBolt implements IRichBolt {
 
     // 接收lines信息进行split, 发送<word,1>格式tuple到下一个bolt
     public void execute(Tuple input) {
-
-
         String line = input.getString(0);
-        String[] words = line.split("\\s+"); // split
-        for (String word : words) {
-            collector.emit(new Values(word, new Integer(1)));
+        String[] words = line.split("\\s+");
+        for (String w : words) {
+            collector.emit(new Values(w, new Integer(1)));
         }
     }
 

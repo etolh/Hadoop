@@ -1,6 +1,7 @@
 package com.huliang.stormdemo.callLog;
 
 import org.apache.storm.Config;
+import org.apache.storm.LocalCluster;
 import org.apache.storm.StormSubmitter;
 import org.apache.storm.generated.AlreadyAliveException;
 import org.apache.storm.generated.AuthorizationException;
@@ -15,7 +16,7 @@ import org.apache.storm.tuple.Fields;
  */
 public class App {
 
-    public static void main(String[] args) throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
+    public static void main(String[] args) throws InvalidTopologyException, AuthorizationException, AlreadyAliveException, InterruptedException {
 
         TopologyBuilder topologyBuilder = new TopologyBuilder();
         // 设置spout:定义spout对象及其id
@@ -29,17 +30,16 @@ public class App {
         Config conf = new Config();
         conf.setDebug(true);
 
-        /*
         // 本地模式
         LocalCluster cluster = new LocalCluster();
         cluster.submitTopology("CallLogCounter", conf, topologyBuilder.createTopology());
-        Thread.sleep(10000); // 休息10s,用于清理数据
+//        Thread.sleep(10000); // 休息10s,用于清理数据
+        System.out.println("Topology begin!!!");
 
         //停止集群，否则storm一直执行处理流数据
-        cluster.shutdown();
-        */
+//        cluster.shutdown();
 
         // 集群运行
-        StormSubmitter.submitTopology("CallLogCounter",conf, topologyBuilder.createTopology());
+//        StormSubmitter.submitTopology("CallLogCounter",conf, topologyBuilder.createTopology());
     }
 }

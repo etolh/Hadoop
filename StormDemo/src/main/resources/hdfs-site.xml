@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+    <!-- 启动自动容灾 -->
+    <property>
+        <name>dfs.ha.automatic-failover.enabled</name>
+        <value>true</value>
+    </property>
+
+    <!-- 配置dfs对应的namesevices -->
+    <property>
+        <name>dfs.nameservices</name>
+        <value>mycluster</value>
+    </property>
+
+    <!-- myucluster下的名称节点两个id -->
+    <property>
+        <name>dfs.ha.namenodes.mycluster</name>
+        <value>nn1,nn2</value>
+    </property>
+
+    <!-- 配置每个nn的rpc地址。 -->
+    <property>
+        <name>dfs.namenode.rpc-address.mycluster.nn1</name>
+        <value>s201:8020</value>
+    </property>
+    <property>
+        <name>dfs.namenode.rpc-address.mycluster.nn2</name>
+        <value>s205:8020</value>
+    </property>
+
+    <!-- 配置webui端口 -->
+    <property>
+        <name>dfs.namenode.http-address.mycluster.nn1</name>
+        <value>s201:50070</value>
+    </property>
+    <property>
+        <name>dfs.namenode.http-address.mycluster.nn2</name>
+        <value>s205:50070</value>
+    </property>
+
+    <!-- 名称节点共享编辑目录. Journal Node -->
+    <property>
+        <name>dfs.namenode.shared.edits.dir</name>
+        <value>qjournal://s202:8485;s203:8485;s204:8485/mycluster</value>
+    </property>
+
+    <!-- java类，client使用它判断哪个节点是激活态。 -->
+    <property>
+        <name>dfs.client.failover.proxy.provider.mycluster</name>
+        <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <!-- 脚本列表或者java类，在容灾保护激活态的nn. -->
+    <property>
+        <name>dfs.ha.fencing.methods</name>
+        <value>
+            sshfence
+            shell(/bin/true)
+        </value>
+    </property>
+
+    <property>
+        <name>dfs.ha.fencing.ssh.private-key-files</name>
+        <value>/home/centos/.ssh/id_rsa</value>
+    </property>
+
+
+    <!-- 配置Journal Node存放edit文本的本地路径 -->
+    <property>
+        <name>dfs.journalnode.edits.dir</name>
+        <value>/home/centos/hadoop/journal</value>
+    </property>
+
+
+    <property>
+        <name>dfs.replication</name>
+        <value>3</value>
+    </property>
+
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>s201:50070</value>
+    </property>
+
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///home/centos/hadoop/dfs/name1,file:///home/centos/hadoop/dfs/name2</value>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///home/centos/hadoop/dfs/data1,file:///home/centos/hadoop/dfs/data2</value>
+    </property>
+
+    <property>
+        <name>dfs.namenode.fs-limits.min-block-size</name>
+        <value>1024</value>
+    </property>
+
+
+    <property>
+        <name>dfs.hosts.exclude</name>
+        <value>/soft/hadoop/etc/hadoop/dfs-hosts-exclude.txt</value>
+    </property>
+
+    <property>
+        <name>dfs.hosts</name>
+        <value>/soft/hadoop/etc/hadoop/dfs-hosts-include.txt</value>
+    </property>
+
+</configuration>
